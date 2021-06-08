@@ -1,0 +1,64 @@
+{
+	"name": "pfta",
+	"version": "0.2.1",
+	"description": "Deep Equal, Copy, Visit, Traverse, and Diff operations using configurable property iterators and filters.",
+	"author": "Frank Stock",
+	"license": "MIT",
+	"keywords": [
+		"deep",
+		"equal",
+		"copy",
+		"compare",
+		"diff",
+		"iterate",
+		"properties",
+		"visit",
+		"traverse"
+	],
+	"main": "lib/index.js",
+	"types": "./lib/index.d.ts",
+	"typings": "lib/index.d.ts",
+	"directories": {
+		"lib": "lib"
+	},
+	"files": [
+		"/ReadMe.md",
+		"/License.txt",
+		"/package.json",
+		"/lib"
+	],
+	"scripts": {
+		"clean": "rimraf ./lib",
+		"fullclean": "npm run clean && rimraf ./node_modules && rimraf ./package-lock.json",
+		"test": "jasmine-ts --project tsconfig.json --config=jasmine.json",
+		"coverage": "nyc -e .ts -x \"**/*.spec.ts\" -x \"tst/*\" --reporter=text-summary --reporter=lcov npm run test",
+		"build": "npm run clean && tsc -p tsconfig.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pcafstockf/pfta.git"
+	},
+	"bugs": {
+		"url": "https://github.com/pcafstockf/pfta/issues"
+	},
+	"dependencies": {
+		"tslib": "~1.14.1"
+	},
+	"devDependencies": {
+		"jest": "~26.6.3",
+		"ts-jest": "~26.5.6",
+		"@types/jasmine": "~3.7.7",
+		"jasmine": "~3.7.0",
+		"jasmine-console-reporter": "~3.1.0",
+		"jasmine-ts": "~0.3.3",
+		"nyc": "~15.1.0",
+		"ts-node": "~8.10.2",
+		"tsconfig-paths": "~3.9.0",
+		"typescript": "~3.8.3"
+	},
+	"nyc": {
+		"extends": "@istanbuljs/nyc-config-typescript",
+		"all": true,
+		"check-coverage": true
+	}
+}
