@@ -1,6 +1,6 @@
 {
 	"name": "pfta",
-	"version": "0.2.3",
+	"version": "0.2.4",
 	"description": "Deep Equal, Copy, Visit, Traverse, and Diff operations using configurable property iterators and filters.",
 	"author": "Frank Stock",
 	"license": "MIT",
