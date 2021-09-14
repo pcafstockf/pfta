@@ -70,7 +70,7 @@ export interface VisitorContext {
 }
 
 /**
- * Default (baase) visitation algorithm for the entire package.
+ * Default (base) visitation algorithm for the entire package.
  */
 export class Visitor implements VisitorOptions {
 	/**
