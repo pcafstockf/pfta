@@ -1,6 +1,12 @@
 # pfta
 (**Property Filtering Traversal Algorithms**)
 
+[![CI Actions](https://github.com/pcafstockf/pfta/workflows/CI/badge.svg)](https://github.com/pcafstockf/pfta/actions)
+[![Publish Actions](https://github.com/pcafstockf/pfta/workflows/NPM%20Publish/badge.svg)](https://github.com/pcafstockf/pfta/actions)
+[![npm version](https://badge.fury.io/js/pfta.svg)](https://badge.fury.io/js/pfta)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![OSS Lifecycle](https://img.shields.io/osslifecycle/pcafstockf/pfta.svg)
+
 ## About
 Deep Equal, Copy, Visit, Traverse, and Diff operations using configurable property iterators and filters.
 
@@ -36,7 +42,7 @@ Coming up with the tests themselves.
 
 ## MIT License
 
-Copyright (c) 2021 Frank Stock
+Copyright (c) 2021-2023 Frank Stock
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,6 +1,6 @@
 {
 	"name": "pfta",
-	"version": "0.2.5",
+	"version": "0.2.6",
 	"description": "Deep Equal, Copy, Visit, Traverse, and Diff operations using configurable property iterators and filters.",
 	"author": "Frank Stock",
 	"license": "MIT",
@@ -33,7 +33,7 @@
 	],
 	"scripts": {
 		"clean": "rimraf ./lib",
-		"fullclean": "npm run clean && rimraf ./.nyc_output && rimraf ./coverage && rimraf ./node_modules && rimraf ./package-lock.json",
+		"fullclean": "npm run clean && rimraf ./.nyc_output && rimraf ./coverage && rimraf ./package-lock.json && rimraf ./node_modules",
 		"test": "TS_NODE_PROJECT=./tsconfig-cjs.json  node --require ts-node/register --require tsconfig-paths/register node_modules/jasmine/bin/jasmine.js --config=jasmine.json",
 		"coverage": "rimraf coverage && rimraf ./nyc_output && nyc -e .ts -x \"**/*.spec.ts\" -x \"tst/*\" --reporter=text-summary --reporter=lcov npm run test",
 		"build": "npm run clean && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && npm run _postbuild",
@@ -48,17 +48,17 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@istanbuljs/nyc-config-typescript": "~1.0.1",
-		"@types/jasmine": "~3.7.7",
-		"jasmine": "~3.7.0",
+		"@istanbuljs/nyc-config-typescript": "~1.0.2",
+		"@types/jasmine": "~4.3.1",
+		"jasmine": "~4.5.0",
 		"jasmine-console-reporter": "~3.1.0",
 		"nyc": "~15.1.0",
-		"rimraf": "~3.0.2",
-		"source-map-support": "~0.5.19",
-		"ts-node": "~10.0.0",
-		"tsconfig-paths": "~3.9.0",
-		"tslib": "~2.3.0",
-		"typescript": "~4.3.3"
+		"rimraf": "~4.1.1",
+		"source-map-support": "~0.5.21",
+		"ts-node": "~10.9.1",
+		"tsconfig-paths": "~4.1.2",
+		"tslib": "~2.4.1",
+		"typescript": "~4.9.4"
 	},
 	"nyc": {
 		"extends": "@istanbuljs/nyc-config-typescript",
